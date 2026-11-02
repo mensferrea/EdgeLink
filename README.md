@@ -9,13 +9,13 @@
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/C%2B%2B-20-blue.svg?style=for-the-badge&logo=c%2B%2B" alt="C++20">
-  <img src="https://img.shields.io/badge/Linux-POSIX%20API-orange.svg?style=for-the-badge&logo=linux" alt="Linux POSIX">
-  <img src="https://img.shields.io/badge/I%2FO-epoll%20Non--Blocking-green.svg?style=for-the-badge" alt="epoll">
-  <img src="https://img.shields.io/badge/Build-CMake%20%7C%20Ninja-red.svg?style=for-the-badge&logo=cmake" alt="CMake">
-  <img src="https://img.shields.io/badge/Tests-GoogleTest%20(19%2F19)-brightgreen.svg?style=for-the-badge&logo=google" alt="GoogleTest">
-  <img src="https://img.shields.io/badge/Container-Docker%20Compose-blue.svg?style=for-the-badge&logo=docker" alt="Docker">
-  <img src="https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge" alt="License">
+  <img src="https://img.shields.io/badge/C%2B%2B-20-blue.svg?&logo=c%2B%2B" alt="C++20">
+  <img src="https://img.shields.io/badge/Linux-POSIX%20API-orange.svg?&logo=linux" alt="Linux POSIX">
+  <img src="https://img.shields.io/badge/I%2FO-epoll%20Non--Blocking-green.svg?" alt="epoll">
+  <img src="https://img.shields.io/badge/Build-CMake%20%7C%20Ninja-red.svg?&logo=cmake" alt="CMake">
+  <img src="https://img.shields.io/badge/Tests-GoogleTest%20(19%2F19)-brightgreen.svg?&logo=google" alt="GoogleTest">
+  <img src="https://img.shields.io/badge/Container-Docker%20Compose-blue.svg?&logo=docker" alt="Docker">
+  <img src="https://img.shields.io/badge/License-MIT-yellow.svg?" alt="License">
 </p>
 
 ---
