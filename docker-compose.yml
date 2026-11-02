@@ -1,0 +1,43 @@
+services:
+  gateway:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: edgelink-gateway
+    ports:
+      - "9001:9001/tcp"
+      - "9002:9002/udp"
+    restart: unless-stopped
+    networks:
+      - edgelink-net
+
+  simulator:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: edgelink-simulator
+    entrypoint: ["/usr/local/bin/edgelink_simulator"]
+    command: ["100", "gateway"]
+    depends_on:
+      - gateway
+    restart: unless-stopped
+    networks:
+      - edgelink-net
+
+  diagnostics:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: edgelink-diagnostics
+    entrypoint: ["/usr/local/bin/edgelink_diagnostics"]
+    command: ["gateway", "5"]
+    cap_add:
+      - NET_RAW
+    depends_on:
+      - gateway
+    networks:
+      - edgelink-net
+
+networks:
+  edgelink-net:
+    driver: bridge
